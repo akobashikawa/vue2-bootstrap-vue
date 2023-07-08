@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <b-jumbotron
-      header="Bootstrap Vue"
+      header="Vue2 Bootstrap Vue"
       lead="Bootstrap v4 Components for Vue.js 2"
     >
       <p>{{ msg }}</p>
@@ -28,6 +28,7 @@ export default {
   methods: {
     helloworld() {
       this.message = "Hello World";
+      this.$bvModal.msgBoxOk(this.message);
     },
   },
 };
