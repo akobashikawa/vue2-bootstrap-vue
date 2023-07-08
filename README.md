@@ -1,5 +1,7 @@
 # vue2-bootstrap-vue
 
+- [Starting with Bootstrap-Vue step by step](https://www.ma-no.org/en/programming/javascript/starting-with-bootstrap-vue-step-by-step)
+
 - npm install -g @vue/cli
 - vue create vue2-bootstrap-vue
   - Manually select features
