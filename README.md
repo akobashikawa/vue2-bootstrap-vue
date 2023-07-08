@@ -9,7 +9,7 @@
     - Router
     - Linter / Formatter
   - Version: 2.x
-  - Use history mode for router: Y
+  - Use history mode for router: No
   - Pick a linter / formatter config: ESLint + Prettier
   - Lint on save
   - Dedicated config files
