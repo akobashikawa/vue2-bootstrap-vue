@@ -1,24 +1,41 @@
 # bootstrap-vue
 
-## Project setup
-```
-npm install
-```
+- npm install -g @vue/cli
+- vue create bootstrap-vue-studio
+  - Manually select features
+    - Babel
+    - Router
+    - Linter / Formatter
+  - Version: 2.x
+  - Use history mode for router: Y
+  - Pick a linter / formatter config: ESLint + Prettier
+  - Lint on save
+  - Dedicated config files
+  - Save as a preset: No
+- cd bootstrap-vue-studio
+- npm run serve
+  - http://localhost:8080/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+```js
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Vue.config.productionTip = false;
 
-### Lints and fixes files
-```
-npm run lint
-```
+/*--------------------REGISTER BOOTSTRAP---------------------------------*/
+import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+// Import Bootstrap an BootstrapVue CSS files (order is important)
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue);
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin);
+/*-----------------------------------------------------------------------*/
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+new Vue({
+  router,
+  render: (h) => h(App),
+}).$mount("#app");
+```
