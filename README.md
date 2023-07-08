@@ -1,4 +1,4 @@
-# bootstrap-vue
+# vue2-bootstrap-vue
 
 - npm install -g @vue/cli
 - vue create vue2-bootstrap-vue
