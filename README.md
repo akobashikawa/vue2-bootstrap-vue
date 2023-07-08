@@ -1,7 +1,7 @@
 # bootstrap-vue
 
 - npm install -g @vue/cli
-- vue create bootstrap-vue
+- vue create vue2-bootstrap-vue
   - Manually select features
     - Babel
     - Router
@@ -12,7 +12,7 @@
   - Lint on save
   - Dedicated config files
   - Save as a preset: No
-- cd bootstrap-vue
+- cd vue2-bootstrap-vue
 - npm run serve
   - http://localhost:8080/
 - npm install bootstrap@4.3.1 bootstrap-vue
